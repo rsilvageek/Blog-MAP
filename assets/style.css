@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ga+Maamli&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/MAP.png'); /* Caminho para sua imagem */
+    background-size: 100% auto; /* Faz com que a imagem se ajuste à largura da tela, mantendo a proporção */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center top; /* Centraliza horizontalmente e alinha ao topo verticalmente */
+    background-attachment: fixed; /* Mantém a imagem fixa em relação à viewport */
+    height: 100vh; /* Define a altura mínima para a tela */
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    overflow-x: hidden; /* Impede o scroll horizontal */
+}
+
+/* Estilo para o header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo semi-transparente para melhor legibilidade */
+    z-index: 1001; /* Garante que o header esteja acima da barra de navegação e do conteúdo */
+    position: fixed; /* Faz o header acompanhar a rolagem da página */
+    top: 0; /* Fixa o header no topo da página */
+    left: 0;
+    width: 100%; /* A largura do header é 100% da viewport */
+}
+
+/* Estilo para o título */
+header h1 {
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: normal;
+    color: #ffa500;
+    text-shadow: 2px 2px 4px rgba(249, 240, 53, 0.6);
+    margin: 0;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #FFD700; /* Cor de fundo dourada */
+    padding: 10px 0; /* Adiciona um pouco de espaço acima e abaixo do conteúdo da navegação */
+    text-align: center; /* Centraliza o conteúdo da barra de navegação */
+    position: fixed; /* A barra de navegação acompanha a rolagem da página */
+    top: 90px; /* Define a posição do topo da barra de navegação em relação ao viewport, abaixo do título */
+    left: 0;
+    width: 100%; /* A largura da barra de navegação é 100% da viewport */
+    z-index: 1000; /* Garante que a barra de navegação esteja acima do conteúdo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra abaixo da barra de navegação */
+}
+
+/* Estilo para a lista de itens da navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove a margem padrão */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #f65858; /* Cor dos links */
+    font-family: "Ga Maamli", sans-serif;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse sobre o link */
+    color: #FFD700; /* Muda a cor do link para dourado ao passar o mouse */
+}
+
+/* Estilo para o conteúdo */
+.conteudo {
+    padding: 120px 20px 20px 20px; /* Adiciona padding suficiente para evitar que o conteúdo fique atrás do header e da barra de navegação */
+    max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo para as seções de conteúdo */
+section {
+    margin-bottom: 30px; /* Espaço entre as seções */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Estilo para a apresentação */
+.apresentação {
+    text-align: justify;
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: #FFD700;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #f65858;
+    font-family: "Ga Maamli", sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+label {
+    margin: 0.5em 0 0.2em; /* Margem padrão para os rótulos */
+}
+
+input, textarea {
+    padding: 0.4em;
+    margin-bottom: 1.4em; /* Aumenta o espaçamento entre os campos */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Garante que os campos ocupem toda a largura disponível do formulário */
+}
+
+button {
+    padding: 0.7em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
